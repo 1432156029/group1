@@ -1,0 +1,49 @@
+package util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConn {
+public Connection connection() {
+Connection conn=null;
+try {
+Class.forName("jdbc:sqlserver://localhost:1433; DatabaseName=移动1711");
+}catch(ClassNotFoundException e){
+e.printStackTrace();
+System.out.println("驱动异常");
+return null;
+}
+String url="jdbc:sqlserver://localhost:1433";
+String username="sa";
+String password="123";
+try {
+conn=DriverManager.getConnection(url, username, password);
+}catch(SQLException e) {
+e.printStackTrace();
+System.out.print("连接数据库异常");
+return null;
+}
+System.out.println("成功连接数据库");
+return conn;
+}
+public static void main(String[] args) {
+DBConn obj=new DBConn();
+Connection conn=obj.connection();
+obj.closeConn(conn);
+
+}
+private void closeConn(Connection conn) {
+if(conn!=null) {
+try {
+conn.close();
+System.out.println("成功关闭数据库");
+}catch(SQLException e) {
+e.printStackTrace();
+
+}
+}
+}
+
+}
+
