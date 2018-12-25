@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>教育经历</title>
+    <style>
+        .a1{
+            width:800px;
+            height:500px;
+            margin-left:90px;
+            font-size:20px;}
+    </style>
+</head>
+<body background="pic.png">
+<h2>个人教育经验</h2>
+<div class="a1">
+    院校名称：<input type="text" name="school" size="30" maxlength="16" placeholder="所在院校" value="" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+    专业名称：<input type="text" name="major" size="30" maxlength="16" placeholder="如：移动应用开发" value="" required/><br /><br />
+    起止时间：<input type="date" name="time" size="30" maxlength="16" placeholder="2018-12-10" value="" required/>-<input type="date" name="dtime" size="30" maxlength="16" placeholder="2018-12-10" value="" required/>
+    最高学历：<select>
+    <option value ="大学本科">大学本科</option>
+    <option value ="专科">专科</option>
+    <option value="硕士研究生">硕士研究生</option>
+    <option value="博士">博士</option>
+    <option value="高中及以下">高中及以下</option>
+</select><br /><br />
+    相关技术：<br />
+    <textarea  name="" rows="10" cols="20" placeholder="标签用分号隔开"style="resize: none;  width: 300px;height: 100px; "></textarea><br /><br />
+    在校荣誉：<br />
+    <textarea type="text" name="honor" size="30" maxlength="16" placeholder="如：参赛得奖/个人荣誉" style="resize: none;  width: 300px;height: 100px;" value=""></textarea><br /><br />
+    <input type="button" style="background-color:#F9C;width:60px;height:40px" value="保存"/> &nbsp;
+    <input type="button" style="background-color:#FFC;width:60px;height:40px" value="取消"/>
+</div>
+
+</body>
+</html>
