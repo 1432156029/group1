@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>个人工作经历</title>
+    <style>
+        .time{
+            position: relative;width: 200px;
+        }
+        .pic{
+            position: absolute;left: 0；z-index:5;
+            background-image:url(日历.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            width: 20px;
+            height: 20px;
+        }
+        .block{
+            height:100px;
+            width:150px;
+            background:#C9F;
+            margin-left:90px;}
+        .n1{
+            width:800px;
+            height:500px;
+            margin-left:90px;
+            font-size:20px;
+        }
+        .zi{
+            text-align:center
+            size:80px;
+            font-family:"新宋体";}
+
+    </style>
+</head>
+
+<body background="pic.png">
+<h2 class="zi">个人工作经历</h2>
+<!--
+<div class=".block">
+<img src="头像.jpg" height="200";width="200"/><br /><br />
+<button>
+上传真实头像
+</button>
+支持jpg/png格式，图片大小不超过3M<br /><br />
+</div>-->
+<div class="n1">
+    公司名称：<input type="text"  name="company" size="30" maxlength="16" placeholder="公司/组织名称：" value="" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+    职位头衔：<input type="text" name="job" size="30" maxlength="16" placeholder="如：Java工程师" value="" required/><br /><br />
+    起止时间：<input type="date" name="time" size="30" maxlength="16" placeholder="2018-12-10" value="" required/>-<input type="date" name="dtime" size="30" maxlength="16" placeholder="2018-12-10" value="" required/>
+    工作城市：<input type="text" name="city" size="30" maxlength="16" placeholder="上海" value=""/><br /><br />
+    年薪水平：<input type="text" name="money" size="30" maxlength="16" placeholder="5w-10w" value=""/><br /><br />
+    相关技术：<br />
+    <textarea  name="" rows="10" cols="20" placeholder="标签用分号隔开"style="resize: none;  width: 300px;height: 100px; "></textarea><br /><br />
+    职位描述：<br />
+    <textarea  name="" rows="10" cols="20" placeholder="在工作期间解决过什么问题？"style="resize: none;  width: 300px;height: 100px; "></textarea><br /><br />
+    <div class="button">
+        <input type="button" style="background-color:#F9C;width:60px;height:40px" value="保存"/> &nbsp;
+        <input type="button" style="background-color:#FFC;width:60px;height:40px" value="取消"/>
+    </div>
+</div>
+</body>
+</html>
