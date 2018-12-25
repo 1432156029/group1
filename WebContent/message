@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>通知提醒</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function a1(){
+            alert("是否拒绝？")
+
+            var se=confirm("已拒绝");
+
+        }
+
+        function a2(){
+            alert("确定同意？")
+            var se=confirm("你已同意");
+
+        }
+        function a3(){
+            alert("确定再次发起约会？")
+            var se=confirm("成功发起约会");
+        }
+    </script>
+    <style>
+        .box {
+            margin-left: 80px;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            display: none;
+        }
+        .box1 {
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            left: 50%;
+            top: 25%;
+            margin-left: 80px;
+            border: 1px solid #000000;
+        }
+        .qq {
+            margin-left: 80px;
+            font-size: 18px;
+        }
+        .ww {
+            margin-top: 0px;
+            margin-left: 80px;
+        }
+        .op_distable {
+            background-color: #CCC
+        }
+        .div1 {
+            margin-top: 15px;
+            width: 1400px;
+            border-bottom: 1px solid #000000;
+        }
+    </style>
+</head>
+<html>
+<body background="bg.jpg">
+<img src="约会吧/img/8.png" style="margin-left:100px; width:500px; height:180px;" /> <a href="约会吧/A home.html" style="text-decoration:none; text-align:right;">返回首页</a> <a href="约会吧/login.html" style="text-decoration:none; text-align:right;">退出账户</a> <a href="通知提醒.html" style="text-decoration:none; text-align-last:right">刷新页面</a>
+<div class="div1"></div>
+<!--
+<ul>
+ <li>
+ <a href="约会.html" style="font-size:24px; font-family: '新宋体'; text-decoration:none">发出的约会
+ </a><br /><br />
+ <a href="第一行代码.pdf" style="font-size:24px; font-family: '新宋体'; text-decoration:none">收到的约会</a><br /><br />
+ <a href="猫头.jpg" style="text-decoration:none; font-size:24px; font-family:'新宋体'">通讯录</a></li></ul>
+  <div style="border:0.1px solid ;float:left;height:500px; margin-left:70px;"></div>-->
+
+<div class="ww">
+    <p style="margin-left:40px; font-size:24px;">通知提醒</p>
+    <input type="button" style="background-color:#FFC;width:120px;height:25px; margin-left:40px;" value="全部标记为已读"/>
+</div>
+<br />
+<div>
+    <p style="font-size:20px; margin-left:40px;">今天</p>
+    <ul>
+        <li><a href="王小明.txt" style="text-decoration:none; font-size:18px">王小明</a>响应了你的约会。&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" onclick="a2()" style="background-color:#F9C;width:50px;height:25px" class="op_distable" id="op" value="同意"/>
+            &nbsp; &nbsp;
+            <input type="button" onclick="a1()" style="background-color:#F9C;width:50px;height:25px" class="op_distable" id="op" value="拒绝"/>
+        </li>
+        <li ><a href="牛帅.txt" style="text-decoration:none; font-size:18px">牛帅</a>拒绝了你的请求.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" onclick="a3()" style="background-color:#F9C;width:50px;height:25px" class="op_distable" id="op" value="约会"/>
+        </li>
+    </ul>
+
+    <!--
+     <div class="qq">
+     <table>
+     <tr>
+     <th>
+     暂时没有消息通知！
+     </th>
+     </tr>
+     </table>
+
+     </div>-->
+</body>
+</html>

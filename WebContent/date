@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>约会吧</title>
+    <style>
+        .bb{
+            width:700px;
+            height:80px;
+            background-position:center;
+            margin-left:50px;
+        }
+        .cc{
+            width:700px;
+            height::400px;
+            text-shadow:#F9F;
+            background-origin:content-box;
+            margin-left:50px;}
+        .time{
+            border-width:20px;
+            height:70px;}
+    </style>
+</head>
+<body background="bg.jpg">
+<h2>
+    发布约会
+</h2>
+<div class="bb">
+    主题：&nbsp;&nbsp;<img src="heart-5.png" width="40" height="40"/>&nbsp;&nbsp;&nbsp;
+    <img src="heart-8.png" width="40" height="40"/>&nbsp;&nbsp;&nbsp;
+    <img src="heart-10.png" width="40" height="40" />&nbsp;&nbsp;&nbsp;
+    <img src="heart-20.png" width="40" height="40"/>&nbsp;&nbsp;&nbsp;
+    <img src="heart-15.png" width="40" height="40"/> &nbsp;&nbsp;
+    <img src="heart-2.png" width="40" height="40" />&nbsp;&nbsp;&nbsp;
+    <img src="heart-14.png" width="40" height="40" />&nbsp;&nbsp;&nbsp;
+    <img src="heart-18.png" width="40" height="40" /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吃饭 &nbsp;&nbsp;&nbsp;看电影&nbsp;&nbsp;&nbsp;&nbsp;旅游&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K歌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;逛街&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下午茶&nbsp;&nbsp;&nbsp;&nbsp;其他</div><br />
+<div class="cc">
+    费用：&nbsp;<input type="radio" id="主动买单" name="1" checked="checked"/>我买单&nbsp;&nbsp;<input type="radio" id="AA" name="1"/>AA<br /><br />
+    时间：&nbsp;<select name="month" >‘
+    <option value="不限时间">不限时间</option>
+    <option value="1">1月</option>
+    <option value="2">2月</option>
+    <option value="3">3月</option>
+    <option value="4">4月</option>
+    <option value="5">5月</option>
+    <option value="6">6月</option>
+    <option value="7">7月</option>
+    <option value="8">8月</option>
+    <option value="9">9月</option>
+    <option value="10">10月</option>
+    <option value="11">11月</option>
+    <option value="12">12月</option></select>
+    <select name="day">
+        <option value="不限时间">不限时间</option>
+        <option value="1">1日</option>
+        <option value="2">2日</option>
+        <option value="3">3日</option>
+        <option value="4">4日</option>
+        <option value="5">5日</option>
+        <option value="6">6日</option>
+        <option value="7">7日</option>
+        <option value="8">8日</option>
+        <option value="9">9日</option>
+        <option value="10">10日</option>
+        <option value="11">11日</option>
+        <option value="12">12日</option>
+        <option value="13">13日</option>
+        <option value="14">14日</option>
+        <option value="15">15日</option>
+        <option value="16">16日</option>
+        <option value="17">17日</option>
+        <option value="18">18日</option>
+        <option value="19">19日</option>
+        <option value="20">20日</option>
+        <option value="21">21日</option>
+        <option value="22">22日</option>
+        <option value="23">23日</option>
+        <option value="24">24日</option>
+        <option value="25">25日</option>
+        <option value="26">26日</option>
+        <option value="27">27日</option>
+        <option value="28">28日</option>
+        <option value="29">29日</option>
+        <option value="30">30日</option>
+        <option value="31">31日</option></select><br />
+    <br />
+    地点：&nbsp;<input type="text" name="address" size="70" maxlength="20" placeholder="详细地址："value=""/><br /><br />
+    描述：<br /><textarea style="width:500px;height: 100px; " placeholder="请添加30-50字的描述:"></textarea><br /><br />
+    <input type="button" style="background-color:#F9C;width:70px;height:50px" value="发起约会"/> &nbsp;
+
+
+</div>
+</body>
+</html>
